@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Wera Seemann- Portfolio</title>
+    <title>Wera Seemann-Portfolio</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
@@ -33,15 +33,15 @@
             </ul>
         </nav>
     </header>
-    <div>
-        <h1>Contact</h1>
+    <div class="contact_container">
+        <h1>Contact me at</h1>
         <div>
             <h2>Wera Seemann</h2>
             Kalvarienbergstr. 49<br>
             87509 Immenstadt<br>
             Germany<br>
             <p>
-                <a href="tel:+4917622895918">Tel.: +49 176 228 959 18</a>
+            <a href="tel:+4917622895918">Tel.: +49 176 228 959 18</a>
             <br>
             <a href="mailto: wera.seemann@gmail.com?subject=Your%20Portfolio&body=Dear%20Wera%20Seemann%2C%0D%0A%0D%0A">wera(dot)seemann(at)gmail(dot)com</a>
             <br>
@@ -51,16 +51,19 @@
         </div>
         <div>
             <form action="" method="post" id="contact-form">
-                <label class="standard-label" for="contact-email">Email: </label>
-                <input type="email" id="contact-email" required>
-
-                <label class="standard-label" for="my-input">Telephone: </label>
-                <input type="tel" id="my-input" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-
-                <label class="standard-label"  for="my-message">Message: </label>
-                <textarea required maxlength="240" id="my-message"></textarea>
-
-                <input type="submit" value="Send message" class="button_secondary">
+                <p>
+                <label class="standard-label" for="contact-email">Email:</label>
+                <input type="email" style="width: 300px; height: 30px" placeholder="email@..." id="contact-email" required>
+                </p>
+                <p>
+                <label class="standard-label" for="my-input">Telephone:</label>
+                <input type="tel" style="width: 300px; height: 30px" placeholder="+telephone" id="my-input" pattern="\d{3}[\-]\d{3}[\-]\d{4}"><br>
+                </p>
+                <p>
+                <label class="standard-label"  for="my-message">Message:</label>
+                <textarea required style="width: 300px; height: 100px" maxlength="240" placeholder="Your message for me" id="my-message"></textarea>
+                </p>
+                <input type="submit" value="Send message" style="font-size: 16px;"  class="button_secondary"><br>
             </form>
         </div>
     </div>
