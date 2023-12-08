@@ -47,7 +47,9 @@ h3 {
     max-width: 650px;
     margin: 0 auto;
 }
- 
+.contact_container {
+  text-align: center;
+}  
 a {
     color: var(--primary-text-color);
 }
