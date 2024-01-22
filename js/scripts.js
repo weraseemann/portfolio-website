@@ -19,7 +19,7 @@ function validateEmail() {
           container.removeChild(error);
         }
       
-        // Now add the error if the message isn’t empty
+        // Add the error if the message isn’t empty
         if (message) {
           let error = document.createElement('div');
           error.classList.add('error-message');
