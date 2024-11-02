@@ -3,10 +3,9 @@
     --primary-text-color: #15191d;
     --background-color: #eeeeee;
     --primary-color: #302e55;
-    --primary-color-light: #4a45a0;
+    --primary-color-light: #4a45a0; 
     --secondary-color: #a58669;
     --light-blue-cold: #0099d3;
-    --marine-blue: #02a0de;
     --font-weight-400: 400;
     --font-weight-700: 700;
     --font-size-16: 16px;
@@ -134,20 +133,25 @@ button:focus,
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 30px;   
+    grid-gap: 20px;   
  }
 .grid_item {
-    background-color: var(--marine-blue);
+    background-color: var(--background-color);
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 3px 19px 0px rgba(0, 0, 0, 0.3);  
+    display: inline-block;
+    width: 33%;
  }
+ .grid_img {
+  border-radius: 10px;
+ }
+
 .grid_item:last-child {
     grid-column: 3 / 3;
     grid-row: 1 / 3;
  }
-.grid_item {
-    display: inline-block;
-    width: 33%;
-   }
+
 @supports (display: grid) {
     .grid {
       display: grid;
@@ -157,7 +161,7 @@ button:focus,
    
     }
     .grid_item {
-      background-color: var(--marine-blue);
+      background-color: var(--background-color);
       width: auto;
       min-height: auto;
       margin: 0;
