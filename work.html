@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -33,22 +33,36 @@
     </header>
    <!--Main content-->
    <section>
-    <h1>Work</h1>
+    <h1>PROJECTS</h1>
     <div class="grid">
         <!--Grid items live here-->
         <div class="grid_item">
-            <h2>Mobile web app</h2>
+            <img class="grid_img" src="img/meet-event-main.png" width="400" alt="Meet-Event-Internetsite-image">
+            <h2>Meet app</h2>
             <p>
-                Within this project I was responsible for the frontend. It’s written in React.js. Additionally, I've created the HTML and CSS templates.   
+                A serverless, progressive web application (PWA) with React built using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.
             </p>
-            <a href="#">See project on GitHub</a>
+            <h4>Techstack:</h4>
+            <span>React, Google Calendar API, AWS, Serverless, Atatus-spa, Jest, Gherkins, Puppeteer, Jest-Cucumber</span>
+            <p>
+            <a href="https://github.com/weraseemann/meet">See project on GitHub</a>  
+            </p>
+            <p>
+            <a href="https://weraseemann.github.io/meet">See the deployed version of the project </a>  
+            </p>
         </div>
         <div class="grid_item">
-            <h2>Native MacOS application</h2>
+            <img class="grid_img" src="img/chat-app-main.png" width="400" alt="Meet-Event-Internetsite-image">
+            <h2>ChatOnGo</h2>
             <p>
-                Within this project I was responsible for the frontend. It’s written in JavaFX.   
+                This is a mobile chat application built with React Native. The app will provide users with a chat interface and options to share images and their location.
+                Key Features: A start page where users can enter their name and choose a background color for the chat screen before joining the chat. A page displaying the conversation, as well as an input field and submit button. The chat provides users with two additional communication features: sending images and location data. Data gets stored online and offline.
             </p>
-            <a href="#">See project on GitHub</a>
+            <h4>Techstack:</h4>
+            <span>React Native, Expo, Google Firestore Database, Firebase Cloud Storage, Gifted Chat library</span>
+            <p>
+            <a href="https://github.com/weraseemann/chat-app">See project on GitHub</a>  
+            </p>
         </div>
         <div class="grid_item">
             <h2>Node.js pdf generation</h2>
@@ -93,7 +107,10 @@
             </a>
         </div>
     </footer>
-    <script src="js/tota11y.min.js"></script>
+    <strong>
+        <script src="js/tota11y.min.js"></script>
+        <script src="js/scripts.js"></script>
+</strong>
 </body>
 
 </html>
